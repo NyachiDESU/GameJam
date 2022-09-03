@@ -1,0 +1,7 @@
+админ@DESKTOP-S33DIDM[[:space:]]MINGW32[[:space:]]/d/Unity/Projects/GameJam[[:space:]](main)
+$[[:space:]]Assets/Plugins/Free[[:space:]]Pack[[:space:]]Wooden[[:space:]]Planks/Textures/Wood[[:space:]]Planks1/Wood_Planks_Free_roughness.tga
+git[[:space:]]lft[[:space:]]track[[:space:]] filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/Free[[:space:]]Pack[[:space:]]Wooden[[:space:]]Planks/Textures/** filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/FreePackWoodenPlanks/Textures/** filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/LowPolyOfficeProps_LITE/LowPolyOfficeProps_LiteScene/LightingData.asset filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/TextMeshPro/Resources/Fonts&Materials/LiberationSansSDF.asset filter=lfs diff=lfs merge=lfs -text
