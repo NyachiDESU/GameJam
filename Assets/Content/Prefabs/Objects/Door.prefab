@@ -94,11 +94,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 212.452
       objectReference: {fileID: 0}
+    - target: {fileID: 1861412911663990256, guid: 6c18b6b9be2f45b439c4234a337ba481,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f8cbd78ceffed584dafcd656b689953c, type: 2}
     - target: {fileID: 1867178013295977475, guid: 6c18b6b9be2f45b439c4234a337ba481,
         type: 3}
       propertyPath: m_Name
       value: AnimatedDoor (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3720668333251800418, guid: 6c18b6b9be2f45b439c4234a337ba481,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c983685d2d1290f4ba92083bde2bcba1, type: 2}
+    - target: {fileID: 3720668333251800418, guid: 6c18b6b9be2f45b439c4234a337ba481,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c86ef47afbec004da7478b067d3bf6d, type: 2}
+    - target: {fileID: 3720668333251800418, guid: 6c18b6b9be2f45b439c4234a337ba481,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: f8cbd78ceffed584dafcd656b689953c, type: 2}
+    - target: {fileID: 3720668333251800418, guid: 6c18b6b9be2f45b439c4234a337ba481,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee896095d5ef51f44879cc31c621fd13, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c18b6b9be2f45b439c4234a337ba481, type: 3}
 --- !u!4 &8096500025234078675 stripped
