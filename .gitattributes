@@ -5,3 +5,5 @@ Assets/Plugins/Free[[:space:]]Pack[[:space:]]Wooden[[:space:]]Planks/Textures/**
 Assets/Plugins/FreePackWoodenPlanks/Textures/** filter=lfs diff=lfs merge=lfs -text
 Assets/Plugins/LowPolyOfficeProps_LITE/LowPolyOfficeProps_LiteScene/LightingData.asset filter=lfs diff=lfs merge=lfs -text
 Assets/Plugins/TextMeshPro/Resources/Fonts&Materials/LiberationSansSDF.asset filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/Original[[:space:]]Wood[[:space:]]Textures/** filter=lfs diff=lfs merge=lfs -text
+Assets/Plugins/OriginalWoodTextures/** filter=lfs diff=lfs merge=lfs -text

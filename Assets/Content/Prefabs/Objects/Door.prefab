@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 3332963257880906831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.635, y: 0, z: -0.22}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8281326953687957872}
@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 8281326953687957872}
   - component: {fileID: 6186798780336059170}
   - component: {fileID: 291296694618948910}
+  - component: {fileID: 8715287885373326460}
   m_Layer: 0
   m_Name: imagetostl_mesh
   m_TagString: Untagged
@@ -93,11 +94,11 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -156486658544998735, guid: f219f70f25bb988438ab33f2d4c3b6fa, type: 3}
-  - {fileID: 5865586234719623449, guid: f219f70f25bb988438ab33f2d4c3b6fa, type: 3}
-  - {fileID: 3473123015285894068, guid: f219f70f25bb988438ab33f2d4c3b6fa, type: 3}
-  - {fileID: 8801679490653950251, guid: f219f70f25bb988438ab33f2d4c3b6fa, type: 3}
-  - {fileID: 4913426069162526988, guid: f219f70f25bb988438ab33f2d4c3b6fa, type: 3}
+  - {fileID: 2100000, guid: f8cbd78ceffed584dafcd656b689953c, type: 2}
+  - {fileID: 2100000, guid: c983685d2d1290f4ba92083bde2bcba1, type: 2}
+  - {fileID: 2100000, guid: 5c86ef47afbec004da7478b067d3bf6d, type: 2}
+  - {fileID: 2100000, guid: f8cbd78ceffed584dafcd656b689953c, type: 2}
+  - {fileID: 2100000, guid: ee896095d5ef51f44879cc31c621fd13, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -119,6 +120,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8715287885373326460
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5282840263055161487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.017048353, y: 0.024725914, z: 0.0011390508}
+  m_Center: {x: 0.001472885, y: 0.012368297, z: 0.0005695233}
 --- !u!1 &8092246943399373439
 GameObject:
   m_ObjectHideFlags: 0
