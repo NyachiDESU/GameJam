@@ -109,7 +109,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
+    rgba: 4279440289
   m_fontColor: {r: 0.6320754, g: 0.07553097, b: 0.07553097, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -291,6 +291,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Exit_LP
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 06ea39ec56f57ab4198a8ad403af1227,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06ea39ec56f57ab4198a8ad403af1227, type: 3}
