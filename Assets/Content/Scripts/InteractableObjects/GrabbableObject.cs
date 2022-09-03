@@ -1,15 +1,24 @@
 using UnityEngine;
 
-public class GrabbableObject : MonoBehaviour
+public class GrabbableObject : InteractableObject
 {
     private Rigidbody _rigidbody;
     private Transform _objectTransformPoint;
     private float _lerpSpeed = 10;
+    private bool _isGrabbable;
+    public bool IsGrabbable => _isGrabbable;
 
     // Start is called before the first frame update
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _isGrabbable = false;
+    }
+
+    public void StartAnimation()
+    {
+        // TODO: start animation
+        _isGrabbable = true;
     }
 
     public void Grab(Transform objectTransform)
