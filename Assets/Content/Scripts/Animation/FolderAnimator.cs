@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class FolderAnimator : MonoBehaviour, IAnimationStateReader
 {
     [SerializeField] private Animator _animator;
+    [SerializeField] private MeshSwapper _meshSwapper;
     [SerializeField] private GameObject _particleSystem;
     
     private static readonly int _getFolderHash = Animator.StringToHash("GetFolder");
@@ -20,6 +23,11 @@ public class FolderAnimator : MonoBehaviour, IAnimationStateReader
     private void Awake()
     {
         _animator.enabled = false;
+    }
+
+    private void Start()
+    {
+        _meshSwapper = FindObjectOfType<MeshSwapper>();
     }
 
     public void EnteredState(int state)
@@ -74,6 +82,15 @@ public class FolderAnimator : MonoBehaviour, IAnimationStateReader
         Debug.Log("OnOpened");
         _animator.enabled = false;
         _particleSystem.SetActive(true);
+
+        StartCoroutine(SwapMesh());
+    }
+
+    private IEnumerator SwapMesh()
+    {
+        yield return new WaitForSeconds(_particleSystem.GetComponent<ParticleSystem>().duration - 0.7f);
+        
+        _meshSwapper.SetMesh(gameObject);
     }
 }
 
