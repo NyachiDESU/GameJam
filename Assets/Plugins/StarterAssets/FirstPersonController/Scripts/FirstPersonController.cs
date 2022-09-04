@@ -51,6 +51,11 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		[Header("Sounds")]
+		[SerializeField] private AudioSource _source;
+
+		private bool _isStepPlays = false;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -151,6 +156,18 @@ namespace StarterAssets
 			}
 		}
 
+		private void StartSound()
+        {
+			_isStepPlays = true;
+			_source.Play();
+        }
+
+		private void StopSound()
+        {
+			_isStepPlays = false;
+			_source.Stop();
+        }
+
 		private void Move()
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
@@ -160,7 +177,18 @@ namespace StarterAssets
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is no input, set the target speed to 0
-			if (_input.move == Vector2.zero) targetSpeed = 0.0f;
+			if (_input.move == Vector2.zero)
+			{
+				targetSpeed = 0.0f;
+
+				if (_isStepPlays)
+					StopSound();	
+			}
+			else
+            {
+				if (!_isStepPlays)
+					StartSound();
+            }
 
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
