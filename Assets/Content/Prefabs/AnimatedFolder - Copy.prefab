@@ -2757,7 +2757,7 @@ GameObject:
   - component: {fileID: 7449223830254075469}
   - component: {fileID: 7449223830254075468}
   m_Layer: 0
-  m_Name: AnimatedFolder
+  m_Name: AnimatedFolder - Copy
   m_TagString: Folder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
