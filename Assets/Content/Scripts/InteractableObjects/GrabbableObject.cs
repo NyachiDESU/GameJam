@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class GrabbableObject : MonoBehaviour
@@ -10,6 +11,7 @@ public class GrabbableObject : MonoBehaviour
     private float _lerpSpeed = 10;
     private float _timerOffset = .016f;
     private float _logicTimer;
+    public event Action<bool> OnTook;
 
     // Start is called before the first frame update
     private void Awake()
@@ -22,6 +24,7 @@ public class GrabbableObject : MonoBehaviour
     {
         _objectTransformPoint = objectTransform;
         _face = face;
+        OnTook?.Invoke(true);
         _rigidbody.useGravity = false; 
         _rigidbody.isKinematic = true;
     }
@@ -30,6 +33,7 @@ public class GrabbableObject : MonoBehaviour
     {
         _objectTransformPoint = null;
         _face = null;
+        OnTook?.Invoke(false);
         _rigidbody.useGravity = true;
         _rigidbody.isKinematic = false; 
     }
