@@ -59,6 +59,8 @@ public class DragAndDrop : MonoBehaviour
     {
         key.UseKey();
         ResetHighlight();
+        EscapeSign.ChangeEscapeTextColor();
+        InterfaceManager.SetSecondOptions();
     }
 
     private bool ObjectChecked(out RaycastHit hit)

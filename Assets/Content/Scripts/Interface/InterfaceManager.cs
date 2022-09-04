@@ -20,8 +20,13 @@ namespace GameJam
 
         [SerializeField] private Button _gameOverButton;
 
+        private bool _mainOptionsIsSecond = false;
+
+        private static InterfaceManager _instance;
+
         private void Start()
         {
+            _instance = this;
             GameOverTrigger.OnGameEnded = OpenGameOverWindow;
         }
 
@@ -44,7 +49,7 @@ namespace GameJam
             _optionsWindow.SetActive(true);
             _menuWindow.SetActive(false);
 
-            if (true)
+            if (_mainOptionsIsSecond)
                 OpenSecondOptions();
             else
                 OpenFirstOptions();
@@ -98,6 +103,11 @@ namespace GameJam
             yield return new WaitForSeconds(3);
             AudioManager.PlayClip(ClipType.DoorOpening, _doorAnimator.transform.position, 0.9f);
             _doorAnimator.SetTrigger("OpenDoor");
+        }
+
+        public static void SetSecondOptions()
+        {
+            _instance._mainOptionsIsSecond = true;
         }
     }
 }
