@@ -2672,7 +2672,7 @@ GameObject:
   - component: {fileID: 1926361083622236985}
   - component: {fileID: 518276484846556214}
   m_Layer: 0
-  m_Name: Brick wall
+  m_Name: Escape Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2953,7 +2953,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7e4ada474f6c80f4eb95afd0ca42b4d0, type: 2}
+  - {fileID: 2100000, guid: ad27120a61aaf8d43a42feba36f16d82, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
