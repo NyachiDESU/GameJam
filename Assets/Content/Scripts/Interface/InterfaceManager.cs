@@ -61,6 +61,7 @@ namespace GameJam
         public void OpenDoorAndCloseMenu()
         {
             StartCoroutine(WaitForAnimation());
+            InputHandler.EnablePlayerInput();
             SwitchMenuState(false);
         }
 
