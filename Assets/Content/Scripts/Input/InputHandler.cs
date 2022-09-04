@@ -35,10 +35,11 @@ namespace GameJam
         private void SwitchMenu(InputAction.CallbackContext callback)
         {
             _isMenuOpened = !_isMenuOpened;
-            _playerInput.enabled = !_isMenuOpened;
 
-            Cursor.lockState = _isMenuOpened == true ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = _isMenuOpened;
+            if (_isMenuOpened)
+                DisablePlayerInput();
+            else
+                EnablePlayerInput();
 
             _interfaceManager.SwitchMenuState(_isMenuOpened);
         }
@@ -48,6 +49,13 @@ namespace GameJam
             _instance._playerInput.enabled = true;
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        }
+
+        public static void DisablePlayerInput()
+        {
+            _instance._playerInput.enabled = false;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 }

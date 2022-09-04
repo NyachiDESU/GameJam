@@ -64,7 +64,14 @@ namespace GameJam
 
         private void OpenGameOverWindow()
         {
+            InputHandler.DisablePlayerInput();
+
+            _canvas.SetActive(true);
+
+            _firstOptions.SetActive(false);
+            _secondOptions.SetActive(false);
             _gameOver.SetActive(true);
+
             _gameOverButton.onClick.AddListener(() =>
             {
                 Debug.Log("Player quit");
