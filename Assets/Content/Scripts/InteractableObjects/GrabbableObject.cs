@@ -8,11 +8,14 @@ public class GrabbableObject : MonoBehaviour
     private Transform _face;
     private static Transform _cameraTransform;
     private float _lerpSpeed = 10;
+    private float _timerOffset = .016f;
+    private float _logicTimer;
 
     // Start is called before the first frame update
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _logicTimer = _timerOffset;
     }
 
     public void Grab(Transform objectTransform, Transform face)
@@ -26,18 +29,25 @@ public class GrabbableObject : MonoBehaviour
     public void Drop()
     {
         _objectTransformPoint = null;
+        _face = null;
         _rigidbody.useGravity = true;
         _rigidbody.isKinematic = false; 
     }
 
     private void Update()
     {
-        if (_objectTransformPoint != null)
+        if (_face == null) return;
+        
+        if (_logicTimer < 0)
         {
-            var _direction = (_face.position - transform.position).normalized;//CameraTransform.position - 
-            var _lookRotation = Quaternion.LookRotation(-_direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, _lookRotation, Time.deltaTime * _rotationSpeed);
+            RotateToFace();
+            _logicTimer = _timerOffset;
         }
+        else
+        {
+            _logicTimer -= Time.deltaTime;
+        }
+        
     }
 
     private void FixedUpdate()
@@ -48,5 +58,12 @@ public class GrabbableObject : MonoBehaviour
             
             _rigidbody.MovePosition(newPos);
         }
+    }
+
+    private void RotateToFace()
+    {
+        var _direction = (_face.position - transform.position).normalized; //CameraTransform.position - 
+        var _lookRotation = Quaternion.LookRotation(-_direction);
+        transform.rotation = Quaternion.Lerp(transform.rotation, _lookRotation, Time.deltaTime * _rotationSpeed);
     }
 }
