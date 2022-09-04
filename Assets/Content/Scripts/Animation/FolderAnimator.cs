@@ -98,5 +98,6 @@ public enum AnimatorState
 {
     Get,
     Open,
+    Use,
     Unknown
 }

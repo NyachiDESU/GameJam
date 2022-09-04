@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameJam;
+using UnityEngine;
 
 public class DragAndDrop : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class DragAndDrop : MonoBehaviour
     private Transform _cameraTransform;
     private GrabbableObject _grabbableObject;
     private InteractableObject _highlightObject;
+
+    private KeyController key;
 
 
     private void Awake()
@@ -27,7 +30,35 @@ public class DragAndDrop : MonoBehaviour
             {
                 SelectObject();
             }
+        } 
+    }
+
+    private KeyController CheckForKey()
+    {
+        if (_grabbableObject && _grabbableObject.transform.CompareTag("Key"))
+            key = _grabbableObject.GetComponent<KeyController>();
+        else
+            key = null;
+
+        return key;
+    }
+
+    private bool CheckForDoor()
+    {
+        var pickupDist = 5f;
+        if (Physics.Raycast(_cameraTransform.position, _cameraTransform.forward, out var hit1, pickupDist))
+        {
+            if (hit1.transform.CompareTag("Door"))
+                return true;
         }
+
+        return false;
+    }
+
+    private void OpenDoor()
+    {
+        key.UseKey();
+        ResetHighlight();
     }
 
     private bool ObjectChecked(out RaycastHit hit)
@@ -55,6 +86,15 @@ public class DragAndDrop : MonoBehaviour
             }
             else
             {
+                if (CheckForKey())
+                {
+                    if (CheckForDoor())
+                    {
+                        OpenDoor();
+                        return;
+                    }
+                }
+                
                 _grabbableObject.Drop();
                 _grabbableObject = null;
             }

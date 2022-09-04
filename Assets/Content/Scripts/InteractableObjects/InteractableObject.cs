@@ -11,6 +11,11 @@ public class InteractableObject : MonoBehaviour
         _outline.enabled = false;
     }
 
+    public void SetOutlineRef(Outline outline)
+    {
+        _outline = outline;
+    }
+
     public void Highlight()
     {
         _outline.enabled = true;
