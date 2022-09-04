@@ -4,6 +4,7 @@ using UnityEngine;
 public class FolderAnimator : MonoBehaviour, IAnimationStateReader
 {
     [SerializeField] private Animator _animator;
+    [SerializeField] private GameObject _particleSystem;
     
     private static readonly int _getFolderHash = Animator.StringToHash("GetFolder");
     private static readonly int _openFolderHash = Animator.StringToHash("OpenFolder");
@@ -72,6 +73,7 @@ public class FolderAnimator : MonoBehaviour, IAnimationStateReader
     {
         Debug.Log("OnOpened");
         _animator.enabled = false;
+        _particleSystem.SetActive(true);
     }
 }
 
