@@ -3,6 +3,7 @@
 public class DragAndDrop : MonoBehaviour
 {
     [SerializeField] private Transform _objectTransformPoint;
+    [SerializeField] private Transform _facePoint;
     private Transform _cameraTransform;
     private GrabbableObject _grabbableObject;
     private InteractableObject _highlightObject;
@@ -50,7 +51,7 @@ public class DragAndDrop : MonoBehaviour
             if (_grabbableObject == null)
             {
                 if (hit.transform.TryGetComponent(out _grabbableObject) && _grabbableObject.enabled)
-                    _grabbableObject.Grab(_objectTransformPoint);
+                    _grabbableObject.Grab(_objectTransformPoint, _facePoint);
             }
             else
             {
