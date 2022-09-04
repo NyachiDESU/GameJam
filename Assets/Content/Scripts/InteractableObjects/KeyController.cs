@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 namespace GameJam
@@ -19,6 +20,15 @@ namespace GameJam
             transform.rotation = Quaternion.identity;
             transform.LookAt(_lookPoint);
             _animator.PlayUseKey();
+            StartCoroutine(WaitForClip());
+        }
+
+        private IEnumerator WaitForClip()
+        {
+            yield return new WaitForSeconds(0.65f);
+            AudioManager.PlayClip(ClipType.KeyUse, _lookPoint.transform.position, 0.9f);
+            yield return new WaitForSeconds(0.25f);
+            AudioManager.PlayClip(ClipType.KeyUse, _lookPoint.transform.position, 0.9f);
         }
     }
 }
