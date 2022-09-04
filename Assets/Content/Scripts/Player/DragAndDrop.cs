@@ -45,7 +45,7 @@ public class DragAndDrop : MonoBehaviour
 
     private bool CheckForDoor()
     {
-        var pickupDist = 5f;
+        var pickupDist = 3f;
         if (Physics.Raycast(_cameraTransform.position, _cameraTransform.forward, out var hit1, pickupDist))
         {
             if (hit1.transform.CompareTag("Door"))
@@ -65,7 +65,7 @@ public class DragAndDrop : MonoBehaviour
 
     private bool ObjectChecked(out RaycastHit hit)
     {
-        var pickupDist = 2f;
+        var pickupDist = 5f;
         if (Physics.Raycast(_cameraTransform.position, _cameraTransform.forward, out var hit1,
             pickupDist))
         {
