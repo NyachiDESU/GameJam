@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GameJam
 {
@@ -15,6 +17,14 @@ namespace GameJam
 
         [SerializeField] private GameObject _firstOptions;
         [SerializeField] private GameObject _secondOptions;
+        [SerializeField] private GameObject _gameOver;
+
+        [SerializeField] private Button _gameOverButton;
+
+        private void Start()
+        {
+            GameOverTrigger.OnGameEnded = OpenGameOverWindow;
+        }
 
         public void SwitchMenuState(bool state)
         {
@@ -51,6 +61,16 @@ namespace GameJam
         {
             _firstOptions.SetActive(false);
             _secondOptions.SetActive(true);
+        }
+
+        private void OpenGameOverWindow()
+        {
+            _gameOver.SetActive(true);
+            _gameOverButton.onClick.AddListener(() =>
+            {
+                Debug.Log("Player quit");
+                QuitGame();
+            });
         }
 
         public void QuitGame()
