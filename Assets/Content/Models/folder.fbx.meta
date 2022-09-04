@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b15c62d015bbd1a4f8f7ef4d50463575
+guid: 3b4e3985fbf5e204c8aa3d3cce8495af
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable:
@@ -7,8 +7,8 @@ ModelImporter:
       74: -623603649343465320
     second: Scene
   - first:
-      74: -3100369314251171874
-    second: Idle
+      74: -2236546271236867837
+    second: Opened
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -43,7 +43,7 @@ ModelImporter:
       takeName: Scene
       internalID: 0
       firstFrame: 1
-      lastFrame: 30
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -62,17 +62,24 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 1
+        functionName: OnOpened
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1
     - serializedVersion: 16
-      name: Idle
+      name: Opened
       takeName: Scene
       internalID: 0
-      firstFrame: 1
-      lastFrame: 1
+      firstFrame: 60
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -91,7 +98,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: OnOpened
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

@@ -7,6 +7,7 @@ public class DragAndDrop : MonoBehaviour
     private GrabbableObject _grabbableObject;
     private InteractableObject _highlightObject;
 
+
     private void Awake()
     {
         _cameraTransform = Camera.main.transform;
@@ -16,6 +17,7 @@ public class DragAndDrop : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            AnimateObject();
             GrabObject();
         }
         else
@@ -47,17 +49,29 @@ public class DragAndDrop : MonoBehaviour
         {
             if (_grabbableObject == null)
             {
-                if (hit.transform.TryGetComponent(out _grabbableObject) && _grabbableObject.IsGrabbable)
+                if (hit.transform.TryGetComponent(out _grabbableObject) && _grabbableObject.enabled)
                     _grabbableObject.Grab(_objectTransformPoint);
-                else if (hit.transform.TryGetComponent(out _grabbableObject) && !_grabbableObject.IsGrabbable)
-                {
-                    _grabbableObject.StartAnimation();
-                }
             }
             else
             {
                 _grabbableObject.Drop();
                 _grabbableObject = null;
+            }
+        }
+    }
+
+    private void AnimateObject()
+    {
+        if (ObjectChecked(out RaycastHit hit))
+        {
+            if (hit.transform.CompareTag("Folder"))
+            {
+                var animator = hit.collider.GetComponent<FolderAnimator>();
+
+                if (!animator.IsGotten)
+                    animator.PlayGetBook();
+                else if(!animator.IsOpened)
+                    animator.PlayOpenBook();
             }
         }
     }
