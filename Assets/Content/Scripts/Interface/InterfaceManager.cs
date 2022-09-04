@@ -1,21 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GameJam
 {
     public class InterfaceManager : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
+        [SerializeField] private GameObject _canvas;
+        [SerializeField] private GameObject _menuWindow;
+        [SerializeField] private GameObject _optionsWindow;
+
+        public void SwitchMenuState(bool state)
         {
-        
+            _canvas.SetActive(state);
+
+            if (!state)
+                OpenMainMenu();
         }
 
-        // Update is called once per frame
-        void Update()
+        public void OpenMainMenu()
         {
-        
+            _optionsWindow.SetActive(false);
+            _menuWindow.SetActive(true);
+        }
+
+        public void OpenOptions()
+        {
+            _optionsWindow.SetActive(true);
+            _menuWindow.SetActive(false);
+        }
+
+        public void QuitGame()
+        {
+            Application.Quit();
         }
     }
 }
