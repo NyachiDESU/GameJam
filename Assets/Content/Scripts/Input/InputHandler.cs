@@ -7,7 +7,7 @@ namespace GameJam
     {
         private InputActions _inputActions;
 
-        [SerializeField] private StarterAssets.StarterAssetsInputs _playerInputs;
+        [SerializeField] private PlayerInput _playerInput;
         [SerializeField] private InterfaceManager _interfaceManager;
 
         private bool _isMenuOpened = false;
@@ -32,7 +32,7 @@ namespace GameJam
         private void SwitchMenu(InputAction.CallbackContext callback)
         {
             _isMenuOpened = !_isMenuOpened;
-            _playerInputs.enabled = _isMenuOpened;
+            _playerInput.enabled = !_isMenuOpened;
 
             Cursor.lockState = _isMenuOpened == true ? CursorLockMode.None : CursorLockMode.Locked;
             Cursor.visible = _isMenuOpened;
