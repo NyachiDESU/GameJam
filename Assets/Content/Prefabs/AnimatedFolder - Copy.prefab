@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4407066835203560426}
   - component: {fileID: 3050916274316446495}
   - component: {fileID: 1650594426490937978}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubo_1_5.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 3186417646016958097}
   - component: {fileID: 8953398673819964489}
   - component: {fileID: 8882265409108435920}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_11_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 2239295207805269456}
   - component: {fileID: 4823764789345874709}
   - component: {fileID: 6404309558802093510}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_22_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 1728230116521680059}
   - component: {fileID: 7735141947005775485}
   - component: {fileID: 5967930067132839082}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_31_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 4995559503760885659}
   - component: {fileID: 834693366446929171}
   - component: {fileID: 5632764671680811092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_1_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 6235939837401842341}
   - component: {fileID: 3582919308945814549}
   - component: {fileID: 3008112339350868416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_6_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 6143435232823424670}
   - component: {fileID: 8649284135970369529}
   - component: {fileID: 4643758163656933477}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_7_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 7472820939211778583}
   - component: {fileID: 6615426725650753195}
   - component: {fileID: 3089720924556342154}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_15_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 1903486056567677366}
   - component: {fileID: 3746882109953437301}
   - component: {fileID: 8966052015611597439}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_16_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 2965963429168673394}
   - component: {fileID: 1885235106085023336}
   - component: {fileID: 1325826878687900304}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_26_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 7811948356705224732}
   - component: {fileID: 5293432977088936269}
   - component: {fileID: 7324350437368975054}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_10_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 332884741057644266}
   - component: {fileID: 3479728024380516364}
   - component: {fileID: 6552439442813069919}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_3_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   - component: {fileID: 6894968465558554355}
   - component: {fileID: 4640488987410338736}
   - component: {fileID: 213543235183681435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_8_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 4889868903085125312}
   - component: {fileID: 1262182365611728369}
   - component: {fileID: 3469550718588052758}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_24_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 6859671503235104909}
   - component: {fileID: 2416985147817334085}
   - component: {fileID: 2534646538094182287}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_12_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1256,7 @@ GameObject:
   - component: {fileID: 822284450581781476}
   - component: {fileID: 6302062660634270463}
   - component: {fileID: 6562756991383134449}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cubo_1_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 893209840261482621}
   - component: {fileID: 6207001808262654057}
   - component: {fileID: 4137368232710290098}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_27_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 3923696374636717745}
   - component: {fileID: 4760590017441164297}
   - component: {fileID: 7445903173502069959}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_2_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,7 +1505,7 @@ GameObject:
   - component: {fileID: 7840852086081241927}
   - component: {fileID: 2518602443576329144}
   - component: {fileID: 6113495102017237197}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_23_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1588,7 +1588,7 @@ GameObject:
   - component: {fileID: 3137237812823272828}
   - component: {fileID: 6191444747926341268}
   - component: {fileID: 3072488148438096235}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_21_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1671,7 +1671,7 @@ GameObject:
   - component: {fileID: 1447670524526584330}
   - component: {fileID: 5489595294984290890}
   - component: {fileID: 2901771293710165966}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_17_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 9032707002133947377}
   - component: {fileID: 4016721603460682322}
   - component: {fileID: 6116185108265721929}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_28_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1837,7 +1837,7 @@ GameObject:
   - component: {fileID: 464111381517770691}
   - component: {fileID: 9166054950929166247}
   - component: {fileID: 8025528669649817435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_8_5.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1920,7 +1920,7 @@ GameObject:
   - component: {fileID: 3099588474294381748}
   - component: {fileID: 5649821087246191481}
   - component: {fileID: 4541065458194640210}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_13_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2003,7 +2003,7 @@ GameObject:
   - component: {fileID: 5578734415367674390}
   - component: {fileID: 7927628754399309911}
   - component: {fileID: 5246689555910948062}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_19_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2086,7 +2086,7 @@ GameObject:
   - component: {fileID: 5120597166987585708}
   - component: {fileID: 1618135401126075164}
   - component: {fileID: 2520786750453157354}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_5_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2169,7 +2169,7 @@ GameObject:
   - component: {fileID: 8535186629910677991}
   - component: {fileID: 8267002998363666318}
   - component: {fileID: 580911037287902744}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_33_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2252,7 +2252,7 @@ GameObject:
   - component: {fileID: 159944401144139889}
   - component: {fileID: 6141785129112853433}
   - component: {fileID: 1136795570608967708}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_34_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2335,7 +2335,7 @@ GameObject:
   - component: {fileID: 3583649957182927984}
   - component: {fileID: 1592593583832286087}
   - component: {fileID: 6170125817158188962}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_18_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2418,7 +2418,7 @@ GameObject:
   - component: {fileID: 4300434291141253984}
   - component: {fileID: 5533413496484316673}
   - component: {fileID: 6868915210664187556}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_25_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2501,7 +2501,7 @@ GameObject:
   - component: {fileID: 1449159235791341208}
   - component: {fileID: 4379908144071013274}
   - component: {fileID: 8674278606759730072}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_32_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2584,7 +2584,7 @@ GameObject:
   - component: {fileID: 9202313248192134562}
   - component: {fileID: 6390481757733528473}
   - component: {fileID: 2108109695526365344}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_9_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2667,7 +2667,7 @@ GameObject:
   - component: {fileID: 5201194175880691413}
   - component: {fileID: 4672870723642053997}
   - component: {fileID: 2255591018390995468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_30_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2749,14 +2749,14 @@ GameObject:
   m_Component:
   - component: {fileID: 6983478723197049106}
   - component: {fileID: 7449223830254075466}
-  - component: {fileID: 7449223830254075465}
   - component: {fileID: 7449223830254075467}
   - component: {fileID: 7449223830254075472}
   - component: {fileID: 7449223830254075471}
   - component: {fileID: 7449223830254075470}
   - component: {fileID: 7449223830254075469}
   - component: {fileID: 7449223830254075468}
-  m_Layer: 0
+  - component: {fileID: 7127827608795330838}
+  m_Layer: 3
   m_Name: AnimatedFolder - Copy
   m_TagString: Folder
   m_Icon: {fileID: 0}
@@ -2833,19 +2833,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &7449223830254075465
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7755651877267096488}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 26.2, z: 42.15}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &7449223830254075467
 Animator:
   serializedVersion: 4
@@ -2937,6 +2924,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bd1168d1945b3d4d9171dbef8481670, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &7127827608795330838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755651877267096488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20.47031, y: 24.220337, z: 37.66582}
+  m_Center: {x: 0.14506578, y: 0.9715995, z: -1.3807535}
 --- !u!1 &8131310189058013829
 GameObject:
   m_ObjectHideFlags: 0
@@ -2948,7 +2948,7 @@ GameObject:
   - component: {fileID: 7271647697015633012}
   - component: {fileID: 5826847039300394798}
   - component: {fileID: 162738332668901151}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_4_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3031,7 +3031,7 @@ GameObject:
   - component: {fileID: 3365779640248791624}
   - component: {fileID: 5124686822380922849}
   - component: {fileID: 1907147787276938994}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_35_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3114,7 +3114,7 @@ GameObject:
   - component: {fileID: 7142479558507431080}
   - component: {fileID: 344184435840459171}
   - component: {fileID: 254861067085805877}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_29_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3197,7 +3197,7 @@ GameObject:
   - component: {fileID: 1669776734404370763}
   - component: {fileID: 443680889636847577}
   - component: {fileID: 2258360777997534308}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_14_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3280,7 +3280,7 @@ GameObject:
   - component: {fileID: 6963510950621793624}
   - component: {fileID: 9036457681482668701}
   - component: {fileID: 2325177036806295332}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_5_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3363,7 +3363,7 @@ GameObject:
   - component: {fileID: 3278558387194654067}
   - component: {fileID: 894782013510212926}
   - component: {fileID: 4841155654637394452}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Piano_20_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
