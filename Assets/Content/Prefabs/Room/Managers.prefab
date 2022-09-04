@@ -54,6 +54,7 @@ MonoBehaviour:
   _bookPickupClip: {fileID: 8300000, guid: 19f06819aa826304a914b5a213cc1c0c, type: 3}
   _bookDropClip: {fileID: 8300000, guid: 6759424738bbc5742a43af1958ba948d, type: 3}
   _bookCloseClip: {fileID: 8300000, guid: 1d6df5f3d7b1381469feb901913b2a72, type: 3}
+  _doorOpeningClip: {fileID: 8300000, guid: 9bcc76bb77da0f94d8203e3ec6c766bb, type: 3}
 --- !u!1 &6277556463781715784
 GameObject:
   m_ObjectHideFlags: 0

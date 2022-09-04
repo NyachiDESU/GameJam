@@ -15,6 +15,7 @@ namespace GameJam
         [SerializeField] private AudioClip _bookPickupClip;
         [SerializeField] private AudioClip _bookDropClip;
         [SerializeField] private AudioClip _bookCloseClip;
+        [SerializeField] private AudioClip _doorOpeningClip;
 
         private AudioClip[] _clips;
 
@@ -31,15 +32,17 @@ namespace GameJam
                 _bookUseClip,
                 _bookPickupClip,
                 _bookDropClip,
-                _bookCloseClip
+                _bookCloseClip,
+                _doorOpeningClip
             };
 
             _instance = this;
         }
 
-        public static void PlayClip(ClipType type, Vector3 position)
+        public static void PlayClip(ClipType type, Vector3 position, float volume = 1)
         {
             AudioSource source = Instantiate(_instance._sourcePrefab, position, Quaternion.identity);
+            source.volume = volume;
             source.PlayOneShot(_instance._clips[(int)type]);
             _instance.StartCoroutine(_instance.DestroySource(source.gameObject, _instance._clips[(int)type].length));
         }
@@ -60,6 +63,7 @@ namespace GameJam
         BookUse,
         BookPickup,
         BookDrop,
-        BookClose
+        BookClose,
+        DoorOpening
     }
 }

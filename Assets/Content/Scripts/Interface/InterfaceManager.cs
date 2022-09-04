@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -87,8 +86,10 @@ namespace GameJam
 
         private IEnumerator WaitForAnimation()
         {
+            AudioManager.PlayClip(ClipType.MoveShelf, _cabinetAnimator.transform.position, 0.9f);
             _cabinetAnimator.SetTrigger("MoveBookcase");
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(3);
+            AudioManager.PlayClip(ClipType.DoorOpening, _doorAnimator.transform.position, 0.9f);
             _doorAnimator.SetTrigger("OpenDoor");
         }
     }
