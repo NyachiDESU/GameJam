@@ -5,6 +5,8 @@ namespace GameJam
 {
     public class InputHandler : MonoBehaviour
     {
+        private static InputHandler _instance;
+
         private InputActions _inputActions;
 
         [SerializeField] private PlayerInput _playerInput;
@@ -14,6 +16,7 @@ namespace GameJam
 
         private void Awake()
         {
+            _instance = this;
             _inputActions = new InputActions();
         }
 
@@ -38,6 +41,13 @@ namespace GameJam
             Cursor.visible = _isMenuOpened;
 
             _interfaceManager.SwitchMenuState(_isMenuOpened);
+        }
+
+        public static void EnablePlayerInput()
+        {
+            _instance._playerInput.enabled = true;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }
